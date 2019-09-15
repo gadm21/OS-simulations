@@ -1,0 +1,54 @@
+AWT:               SRTF(2.25)   SJF(2.5)   FCFS(2.5)   RTEDF(2.75)   RR(4.25)   
+ART:               RTEDF(0.5)   RR(0.5)   SRTF(1.5)   SJF(2.5)   FCFS(2.5)   
+ATT:               SRTF(6.5)   SJF(6.75)   FCFS(6.75)   RTEDF(7)   RR(8.5)   
+CPU utilization:   SRTF(100)   SJF(100)   FCFS(100)   RTEDF(100)   RR(100)   
+Proportionality:   SRTF(5.63333)   RTEDF(6.16667)   SJF(6.36667)   FCFS(6.36667)   RR(8.03333)   
+throughput:        SRTF(0.235294)   RTEDF(0.235294)   SJF(0.235294)   FCFS(0.235294)   RR(0.235294)   
+
+
+
+SRTF:
+timeline:a  a  a  b  c  c  c  b  b  b  b  d  d  d  d  d  d  
+<task>	<start time>	<end time>	<duration>
+a	0		3		3
+c	4		7		3
+b	3		11		9
+d	11		17		11
+
+
+RTEDF:
+timeline:a  a  a  b  c  c  c  d  d  d  d  d  d  b  b  b  b  
+<task>	<start time>	<end time>	<duration>
+a	0		3		3
+c	4		7		3
+d	7		13		7
+b	3		17		15
+
+
+SJF:
+timeline:a  a  a  b  b  b  b  b  c  c  c  d  d  d  d  d  d  
+<task>	<start time>	<end time>	<duration>
+a	0		3		3
+b	3		8		6
+c	8		11		7
+d	11		17		11
+
+
+FCFS:
+timeline:a  a  a  b  b  b  b  b  c  c  c  d  d  d  d  d  d  
+<task>	<start time>	<end time>	<duration>
+a	0		3		3
+b	3		8		6
+c	8		11		7
+d	11		17		11
+
+
+RR:
+timeline:a  a  b  a  b  c  b  d  c  b  d  c  b  d  d  d  d  
+<task>	<start time>	<end time>	<duration>
+a	0		4		4
+c	5		12		8
+b	2		13		11
+d	7		17		11
+
+

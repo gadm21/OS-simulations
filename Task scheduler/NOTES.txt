@@ -1,0 +1,9 @@
+I've noticed that preemptive schedulars are almost always better than non-preemtive schedulars.
+I think this has to do with the fact that we don't consider swiching time in this simulator. So, I added an option to enter the switching time to be applied on preemptive schedulars.
+to create the executable : make schedular
+to run the executable: ./schedular <inputfile> <quantum> <switching time>
+<inputfile> : the current input file is called "input.txt"
+<quantum> : affects only the RR schedular and can only be a positive integer 
+<switching time> :  (optional) affects only preemtive schedulars and can be a positive integer or a positive float
+
+the output is produced in a file called "output.out"
